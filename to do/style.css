@@ -1,0 +1,48 @@
+
+.bg-custom {
+    background-image: url('images.jpeg'); /* Ensure the correct path */
+    background-size: cover; /* Optional: Make the background cover the element */
+    background-repeat: repeat; /* Optional: Prevent repeating */
+  }
+  .mt-12 {
+    margin-top: 3rem; /* This depends on your CSS framework like Tailwind CSS or Bootstrap */
+  }
+  .text-white {
+    color: white;
+  }
+  
+.task{
+    width: 380px;
+    background-color: #9097ff1f;
+    height: 40px;
+    padding-block: 24px;
+    padding-inline: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+.li-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+img{
+    width: 1.5rem;
+}
+button {
+    margin-left: 10px;
+}
+
+.completed span{
+    text-decoration: line-through;
+    color: teal;
+}

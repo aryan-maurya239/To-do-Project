@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-custom mt-12 text-white">
+    <div class="flex flex-col items-center max-w-[380px] mx-auto mb-[200px]">
+        <div class="container flex items-center max-w-[380px] mx-auto border-[4px] border-[#9097FF] p-5 rounded-[15px]">
+            <div class="box1 pr-4">
+                <h1 class="font-extrabold text-[30px]">Todo App</h1>
+                <span>Keep it up!</span>
+                <div class="progress-bar h-[10px] bg-green-500/10 rounded-full w-[245px] mt-2 ">
+                    <div
+                        id="progress-value" class="progress-value h-full w-[0%]  bg-[#36FFF4] rounded-full font-medium text-[10px] text-[#eeffe0] flex items-center overflow-hidden transition-[width] duration-1000 ease-in-out">
+                    </div>
+                </div>
+            </div>
+            <div class="box2 w-[70px] h-[70px] rounded-[50%] bg-[#9097FF] flex items-center justify-center">
+                <h1 id="totalTask" class="font-extrabold text-[30px]"></h1>
+            </div>
+        </div>
+
+        <form id="task-form" class="task-input flex items-center justify-between mt-8">
+            <input
+                id="task-input"
+                class="w-[320px]  outline-none bg-[#9097ff1f] m-2 h-10 border-[2px] border-[#9097FF] p-5 rounded-[8px]"
+                type="text" placeholder="Write your new task..">
+            <button
+                type="submit" id="new-task"
+                class="font-bold w-[50px] h-[50px] text-[30px] flex justify-center items-center rounded-[50%] bg-[#9097FF]">+
+            </button>
+        </form>
+
+        <ul id="task-list"  class="w-full mt-4">
+            <!-- Dynamic tasks will be appended here by JavaScript -->
+        </ul>
+    </div>
+</body>
+
+</html>
